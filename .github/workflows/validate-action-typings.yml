@@ -1,12 +1,13 @@
 name: Validate action typings
 
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [master]
+#   pull_request:
+#     branches: [master]
+#   workflow_dispatch:
+# 
 jobs:
   validate-typings:
     runs-on: "ubuntu-latest"

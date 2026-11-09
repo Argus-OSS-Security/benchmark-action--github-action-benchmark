@@ -1,12 +1,13 @@
 name: CI - separate results repo
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#   pull_request:
+#     branches:
+#       - master
+# 
 jobs:
   benchmarkdotnet-framework:
     name: Run Benchmark.Net .Net Benchmark Framework example - github.com/benchmark-action/github-action-benchmark-results
